@@ -1,0 +1,32 @@
+@charset "utf-8";
+*{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+table tr th, table tr td {
+    border: 1px solid silver;
+}
+table{
+    border-collapse: collapse;
+    text-align: center;
+}
+th,td{
+    padding: 5px;
+}
+thead td{
+    background-color: lightgrey;
+
+}
+tbody > tr:nth-child(2n){
+    background-color: aliceblue;
+}
+tbody > tr:hover{
+    background-color: deepskyblue;
+}
+td>a{
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/usertable.css">
+    <script src="../js/jquery-3.3.1.js"></script>
+    <script>
+
+       function chkBoxChange(obj) {
+           var checked = $(obj).prop("checked");
+
+
+               $("tbody>tr>td>input[type='checkbox']").prop("checked",checked);
+
+       }
+    </script>
+</head>
+<body>
+    <form>
+        <div class="search-content">
+            <table>
+                <tbody>
+                    <tr>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="data-content">
+            <table class="data-header" border="0">
+                <thead >
+                    <tr>
+                        <td><input type="checkbox" class="user_check" onchange="chkBoxChange(this)"/></td>
+                        <td>用户CD</td>
+                        <td>用户名</td>
+                        <td>用户等级</td>
+                        <td>登陆时间</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="checkbox" class="user_check"/></td>
+                        <td>0001</td>
+                        <td><a>张三</a></td>
+                        <td>一级管理员</td>
+                        <td>2018/02/25 09：54</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" class="user_check"/></td>
+                        <td>0002</td>
+                        <td><a>李四</a></td>
+                        <td>二级管理员</td>
+                        <td>2018/02/25 10：23</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" class="user_check"/></td>
+                        <td>0003</td>
+                        <td><a href="a">wangwu</a></td>
+                        <td>一级管理员</td>
+                        <td>2018/02/25 10：25</td>
+                    </tr>
+                </tbody>
+                <tfoot></tfoot>
+            </table>
+        </div>
+    </form>
+</body>
+</html>
